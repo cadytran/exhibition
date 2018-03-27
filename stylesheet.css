@@ -1,0 +1,156 @@
+h1 { 
+	font-size: 50px;
+	margin-bottom: 0;
+}
+h3 {
+	margin-top: 0;	
+}
+
+.grid {
+  border: 2px transparent solid;
+  height: 500px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 2fr;
+  grid-template-rows: 3fr 3fr 3fr;
+  grid-row-gap: 20px;
+  grid-column-gap: 25px;
+}
+
+.box {
+  border-radius: 5px;
+  border: 2px transparent solid;
+}
+
+.a {
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.b {
+	background: white;
+	grid-column-start: 3;
+	grid-column-end: span 2;
+	grid-row-start: 1;
+	grid-row-end: 2
+}
+
+.c {
+	grid-column-start:1;
+	grid-column-end: span 2;
+	grid-row-start: 2;
+	grid-row-end: 3;
+}
+
+.d {
+	background: white;
+	grid-column-start:3;
+	grid-column-end: span 2;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	}
+	
+
+body {
+	background-image: url("images/vintage.jpg");
+	background-size: 100% 100%;
+	color: #533E2A;
+	font-family: "Special Elite";
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+.navbar li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #533E2A;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+@font-face {
+	font-family: "Special Elite";
+	src: url(SpecialElite.ttf);
+}
+
+.oof {
+	font-family: "Special Elite";
+}
+
+.lol {
+	grid-column-start: 3;
+	grid-column-end: span 2;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+
+.pop {
+	grid-column-start:1;
+	grid-column-end: span 4;
+	grid-row-start: 2;
+	grid-row-end: 3;
+}
+
+.buzz {
+	grid-column-start:1;
+	grid-column-end: span 2;
+	grid-row-start: 2;
+	grid-row-end: 3;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
